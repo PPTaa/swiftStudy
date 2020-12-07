@@ -11,8 +11,9 @@ import SwiftUI
 struct SwiftUILayOutApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
 //            MyGeoview()
+            MyTabView()
         }
     }
 }
