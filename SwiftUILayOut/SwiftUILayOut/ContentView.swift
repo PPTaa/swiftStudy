@@ -1,0 +1,60 @@
+//
+//  ContentView.swift
+//  SwiftUILayOut
+//
+//  Created by 맥북에어 on 2020/12/04.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        
+        ZStack(alignment: .bottomTrailing){
+            VStack(alignment:.leading, spacing:0){
+                
+                HStack{
+                    Image(systemName: "line.horizontal.3")
+                        .font(.largeTitle)
+                    Spacer()
+                    Image(systemName: "person.crop.circle.fill")
+                        .font(.largeTitle)
+                }
+                .padding(10)
+                Text("Todo List")
+                    .font(.system(size: 40))
+                    .fontWeight(.bold)
+                    .padding(10)
+            
+                ScrollView{
+                    VStack{
+                        Card()
+                        MyCard(icon: "doc.fill", title: "MyCard1", start: "10am", end: "11am", bgColor: Color.black)
+                        MyCard(icon: "tray.fill", title: "Clean", start: "9am", end: "10am", bgColor: Color.blue)
+                        MyCard(icon: "flame.fill", title: "Camp fire", start: "9pm", end: "11pm", bgColor: Color.red)
+                        MyCard(icon: "4k.tv", title: "Watch Tv", start: "6pm", end: "8pm", bgColor: Color.orange)
+                    }// Vstack
+                    .padding(.horizontal,10)
+                    .padding(.bottom, 20)
+                }
+            }
+            Circle()
+                .foregroundColor(.yellow)
+                .frame(width: 60, height: 60)
+                .overlay(
+                    Image(systemName: "plus")
+                        .font(.system(size: 30))
+                        .foregroundColor(.white)
+                )
+                .padding(10)
+                .shadow(radius: 20)
+                
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
