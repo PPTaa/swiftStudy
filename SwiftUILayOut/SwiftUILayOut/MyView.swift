@@ -29,7 +29,8 @@ struct MyView: View {
             Spacer()
         }//vstack
         .background(bgcolor)
-        .ignoresSafeArea(.all)
+        .animation(.none)
+//        .ignoresSafeArea(.all)
     }//body
     
 }

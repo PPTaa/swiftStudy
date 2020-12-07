@@ -13,7 +13,8 @@ struct SwiftUILayOutApp: App {
         WindowGroup {
 //            ContentView()
 //            MyGeoview()
-            MyTabView()
+//            MyTabView()
+            CustomTabView(tabIndex: .home)
         }
     }
 }
