@@ -12,6 +12,7 @@ struct SwiftUILayOutApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+//            MyGeoview()
         }
     }
 }

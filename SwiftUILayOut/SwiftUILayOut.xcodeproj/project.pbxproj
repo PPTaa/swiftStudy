@@ -10,6 +10,8 @@
 		D042C147257DBDE900254D34 /* MyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042C146257DBDE900254D34 /* MyList.swift */; };
 		D042C14A257DC6F200254D34 /* MyNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042C149257DC6F200254D34 /* MyNavigationView.swift */; };
 		D042C14D257DCB8D00254D34 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042C14C257DCB8D00254D34 /* ProfileView.swift */; };
+		D042C154257DF08200254D34 /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042C153257DF08200254D34 /* GeometryReaderView.swift */; };
+		D042C157257DF37200254D34 /* MyGeoview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042C156257DF37200254D34 /* MyGeoview.swift */; };
 		D08C5E5E2579BDB400BFE033 /* SwiftUILayOutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08C5E5D2579BDB400BFE033 /* SwiftUILayOutApp.swift */; };
 		D08C5E602579BDB400BFE033 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08C5E5F2579BDB400BFE033 /* ContentView.swift */; };
 		D08C5E622579BDB900BFE033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08C5E612579BDB900BFE033 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 		D042C146257DBDE900254D34 /* MyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyList.swift; sourceTree = "<group>"; };
 		D042C149257DC6F200254D34 /* MyNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationView.swift; sourceTree = "<group>"; };
 		D042C14C257DCB8D00254D34 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D042C153257DF08200254D34 /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
+		D042C156257DF37200254D34 /* MyGeoview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGeoview.swift; sourceTree = "<group>"; };
 		D08C5E5A2579BDB400BFE033 /* SwiftUILayOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILayOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08C5E5D2579BDB400BFE033 /* SwiftUILayOutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILayOutApp.swift; sourceTree = "<group>"; };
 		D08C5E5F2579BDB400BFE033 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 			children = (
 				D08C5E5D2579BDB400BFE033 /* SwiftUILayOutApp.swift */,
 				D08C5E5F2579BDB400BFE033 /* ContentView.swift */,
+				D042C153257DF08200254D34 /* GeometryReaderView.swift */,
+				D042C156257DF37200254D34 /* MyGeoview.swift */,
 				D042C14C257DCB8D00254D34 /* ProfileView.swift */,
 				D042C149257DC6F200254D34 /* MyNavigationView.swift */,
 				D042C146257DBDE900254D34 /* MyList.swift */,
@@ -160,10 +166,12 @@
 				D08C5E602579BDB400BFE033 /* ContentView.swift in Sources */,
 				D0B7086C2579BFC100A9AB3B /* Card.swift in Sources */,
 				D0B7086F2579C45C00A9AB3B /* BasicCard.swift in Sources */,
+				D042C157257DF37200254D34 /* MyGeoview.swift in Sources */,
 				D0B708722579CAEE00A9AB3B /* MyCard.swift in Sources */,
 				D08C5E5E2579BDB400BFE033 /* SwiftUILayOutApp.swift in Sources */,
 				D042C147257DBDE900254D34 /* MyList.swift in Sources */,
 				D042C14A257DC6F200254D34 /* MyNavigationView.swift in Sources */,
+				D042C154257DF08200254D34 /* GeometryReaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
