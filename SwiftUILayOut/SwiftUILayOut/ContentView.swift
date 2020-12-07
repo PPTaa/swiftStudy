@@ -20,14 +20,20 @@ struct ContentView: View {
                 VStack(alignment:.leading, spacing:0){
                     
                     HStack{
-                        NavigationLink(destination: MyList(isNavigationBar: self.$isNavigationBar)){
+                        NavigationLink(destination: MyList(isNavigationBar:                 self.$isNavigationBar)
+                        ){
                             Image(systemName: "line.horizontal.3")
                                 .font(.largeTitle)
                                 .foregroundColor(.black)
                         }
                         Spacer()
-                        Image(systemName: "person.crop.circle.fill")
-                            .font(.largeTitle)
+                        NavigationLink(destination:
+                            ProfileView()
+                        ){
+                            Image(systemName: "person.crop.circle.fill")
+                                .font(.largeTitle)
+                                .foregroundColor(.black)
+                        }
                     } // Hstack
                     .padding(10)
                     Text("Todo List")
