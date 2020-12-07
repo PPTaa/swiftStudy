@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D042C147257DBDE900254D34 /* MyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042C146257DBDE900254D34 /* MyList.swift */; };
 		D08C5E5E2579BDB400BFE033 /* SwiftUILayOutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08C5E5D2579BDB400BFE033 /* SwiftUILayOutApp.swift */; };
 		D08C5E602579BDB400BFE033 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08C5E5F2579BDB400BFE033 /* ContentView.swift */; };
 		D08C5E622579BDB900BFE033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08C5E612579BDB900BFE033 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D042C146257DBDE900254D34 /* MyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyList.swift; sourceTree = "<group>"; };
 		D08C5E5A2579BDB400BFE033 /* SwiftUILayOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILayOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08C5E5D2579BDB400BFE033 /* SwiftUILayOutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILayOutApp.swift; sourceTree = "<group>"; };
 		D08C5E5F2579BDB400BFE033 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				D08C5E5D2579BDB400BFE033 /* SwiftUILayOutApp.swift */,
 				D08C5E5F2579BDB400BFE033 /* ContentView.swift */,
+				D042C146257DBDE900254D34 /* MyList.swift */,
 				D08C5E612579BDB900BFE033 /* Assets.xcassets */,
 				D08C5E662579BDB900BFE033 /* Info.plist */,
 				D08C5E632579BDB900BFE033 /* Preview Content */,
@@ -152,6 +155,7 @@
 				D0B7086F2579C45C00A9AB3B /* BasicCard.swift in Sources */,
 				D0B708722579CAEE00A9AB3B /* MyCard.swift in Sources */,
 				D08C5E5E2579BDB400BFE033 /* SwiftUILayOutApp.swift in Sources */,
+				D042C147257DBDE900254D34 /* MyList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
