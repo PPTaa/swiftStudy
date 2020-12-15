@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D040F0E12581B48800750D76 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040F0E02581B48800750D76 /* WeatherViewModel.swift */; };
-		D08525872581AA61004B6A4C /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08525862581AA61004B6A4C /* WeatherService.swift */; };
-		D085258A2581ACB5004B6A4C /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08525892581ACB5004B6A4C /* Weather.swift */; };
-		D08CE0B12581A4AF00F503E2 /* WeatherMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08CE0B02581A4AF00F503E2 /* WeatherMVVMApp.swift */; };
-		D08CE0B32581A4AF00F503E2 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08CE0B22581A4AF00F503E2 /* WeatherView.swift */; };
-		D08CE0B52581A4B400F503E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08CE0B42581A4B400F503E2 /* Assets.xcassets */; };
-		D08CE0B82581A4B400F503E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08CE0B72581A4B400F503E2 /* Preview Assets.xcassets */; };
+		D040F0F125836A7E00750D76 /* FindMyIPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040F0F025836A7E00750D76 /* FindMyIPApp.swift */; };
+		D040F0F325836A7E00750D76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040F0F225836A7E00750D76 /* ContentView.swift */; };
+		D040F0F525836A8200750D76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D040F0F425836A8200750D76 /* Assets.xcassets */; };
+		D040F0F825836A8200750D76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D040F0F725836A8200750D76 /* Preview Assets.xcassets */; };
+		D040F10125836AB400750D76 /* FindMyIPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040F10025836AB400750D76 /* FindMyIPService.swift */; };
+		D040F10425836C4D00750D76 /* FindMyIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040F10325836C4D00750D76 /* FindMyIP.swift */; };
+		D040F1072583715B00750D76 /* FindMyIPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040F1062583715B00750D76 /* FindMyIPViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D040F0E02581B48800750D76 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
-		D08525862581AA61004B6A4C /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
-		D08525892581ACB5004B6A4C /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		D08CE0AD2581A4AF00F503E2 /* WeatherMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D08CE0B02581A4AF00F503E2 /* WeatherMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMVVMApp.swift; sourceTree = "<group>"; };
-		D08CE0B22581A4AF00F503E2 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
-		D08CE0B42581A4B400F503E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D08CE0B72581A4B400F503E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D08CE0B92581A4B400F503E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D040F0ED25836A7E00750D76 /* FindMyIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D040F0F025836A7E00750D76 /* FindMyIPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyIPApp.swift; sourceTree = "<group>"; };
+		D040F0F225836A7E00750D76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D040F0F425836A8200750D76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D040F0F725836A8200750D76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D040F0F925836A8200750D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D040F10025836AB400750D76 /* FindMyIPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyIPService.swift; sourceTree = "<group>"; };
+		D040F10325836C4D00750D76 /* FindMyIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyIP.swift; sourceTree = "<group>"; };
+		D040F1062583715B00750D76 /* FindMyIPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyIPViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D08CE0AA2581A4AF00F503E2 /* Frameworks */ = {
+		D040F0EA25836A7E00750D76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,41 +39,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D08CE0A42581A4AF00F503E2 = {
+		D040F0E425836A7D00750D76 = {
 			isa = PBXGroup;
 			children = (
-				D08CE0AF2581A4AF00F503E2 /* WeatherMVVM */,
-				D08CE0AE2581A4AF00F503E2 /* Products */,
+				D040F0EF25836A7E00750D76 /* FindMyIP */,
+				D040F0EE25836A7E00750D76 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D08CE0AE2581A4AF00F503E2 /* Products */ = {
+		D040F0EE25836A7E00750D76 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D08CE0AD2581A4AF00F503E2 /* WeatherMVVM.app */,
+				D040F0ED25836A7E00750D76 /* FindMyIP.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D08CE0AF2581A4AF00F503E2 /* WeatherMVVM */ = {
+		D040F0EF25836A7E00750D76 /* FindMyIP */ = {
 			isa = PBXGroup;
 			children = (
-				D08CE0B02581A4AF00F503E2 /* WeatherMVVMApp.swift */,
-				D08CE0B22581A4AF00F503E2 /* WeatherView.swift */,
-				D08525862581AA61004B6A4C /* WeatherService.swift */,
-				D040F0E02581B48800750D76 /* WeatherViewModel.swift */,
-				D08CE0B42581A4B400F503E2 /* Assets.xcassets */,
-				D08CE0B92581A4B400F503E2 /* Info.plist */,
-				D08525892581ACB5004B6A4C /* Weather.swift */,
-				D08CE0B62581A4B400F503E2 /* Preview Content */,
+				D040F0F025836A7E00750D76 /* FindMyIPApp.swift */,
+				D040F0F225836A7E00750D76 /* ContentView.swift */,
+				D040F10025836AB400750D76 /* FindMyIPService.swift */,
+				D040F1062583715B00750D76 /* FindMyIPViewModel.swift */,
+				D040F10325836C4D00750D76 /* FindMyIP.swift */,
+				D040F0F425836A8200750D76 /* Assets.xcassets */,
+				D040F0F925836A8200750D76 /* Info.plist */,
+				D040F0F625836A8200750D76 /* Preview Content */,
 			);
-			path = WeatherMVVM;
+			path = FindMyIP;
 			sourceTree = "<group>";
 		};
-		D08CE0B62581A4B400F503E2 /* Preview Content */ = {
+		D040F0F625836A8200750D76 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				D08CE0B72581A4B400F503E2 /* Preview Assets.xcassets */,
+				D040F0F725836A8200750D76 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -81,38 +81,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D08CE0AC2581A4AF00F503E2 /* WeatherMVVM */ = {
+		D040F0EC25836A7E00750D76 /* FindMyIP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D08CE0BC2581A4B400F503E2 /* Build configuration list for PBXNativeTarget "WeatherMVVM" */;
+			buildConfigurationList = D040F0FC25836A8200750D76 /* Build configuration list for PBXNativeTarget "FindMyIP" */;
 			buildPhases = (
-				D08CE0A92581A4AF00F503E2 /* Sources */,
-				D08CE0AA2581A4AF00F503E2 /* Frameworks */,
-				D08CE0AB2581A4AF00F503E2 /* Resources */,
+				D040F0E925836A7E00750D76 /* Sources */,
+				D040F0EA25836A7E00750D76 /* Frameworks */,
+				D040F0EB25836A7E00750D76 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = WeatherMVVM;
-			productName = WeatherMVVM;
-			productReference = D08CE0AD2581A4AF00F503E2 /* WeatherMVVM.app */;
+			name = FindMyIP;
+			productName = FindMyIP;
+			productReference = D040F0ED25836A7E00750D76 /* FindMyIP.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D08CE0A52581A4AF00F503E2 /* Project object */ = {
+		D040F0E525836A7D00750D76 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
-					D08CE0AC2581A4AF00F503E2 = {
+					D040F0EC25836A7E00750D76 = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
-			buildConfigurationList = D08CE0A82581A4AF00F503E2 /* Build configuration list for PBXProject "WeatherMVVM" */;
+			buildConfigurationList = D040F0E825836A7E00750D76 /* Build configuration list for PBXProject "FindMyIP" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,45 +120,45 @@
 				en,
 				Base,
 			);
-			mainGroup = D08CE0A42581A4AF00F503E2;
-			productRefGroup = D08CE0AE2581A4AF00F503E2 /* Products */;
+			mainGroup = D040F0E425836A7D00750D76;
+			productRefGroup = D040F0EE25836A7E00750D76 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D08CE0AC2581A4AF00F503E2 /* WeatherMVVM */,
+				D040F0EC25836A7E00750D76 /* FindMyIP */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D08CE0AB2581A4AF00F503E2 /* Resources */ = {
+		D040F0EB25836A7E00750D76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D08CE0B82581A4B400F503E2 /* Preview Assets.xcassets in Resources */,
-				D08CE0B52581A4B400F503E2 /* Assets.xcassets in Resources */,
+				D040F0F825836A8200750D76 /* Preview Assets.xcassets in Resources */,
+				D040F0F525836A8200750D76 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D08CE0A92581A4AF00F503E2 /* Sources */ = {
+		D040F0E925836A7E00750D76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D040F0E12581B48800750D76 /* WeatherViewModel.swift in Sources */,
-				D085258A2581ACB5004B6A4C /* Weather.swift in Sources */,
-				D08CE0B32581A4AF00F503E2 /* WeatherView.swift in Sources */,
-				D08525872581AA61004B6A4C /* WeatherService.swift in Sources */,
-				D08CE0B12581A4AF00F503E2 /* WeatherMVVMApp.swift in Sources */,
+				D040F0F325836A7E00750D76 /* ContentView.swift in Sources */,
+				D040F10425836C4D00750D76 /* FindMyIP.swift in Sources */,
+				D040F0F125836A7E00750D76 /* FindMyIPApp.swift in Sources */,
+				D040F10125836AB400750D76 /* FindMyIPService.swift in Sources */,
+				D040F1072583715B00750D76 /* FindMyIPViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D08CE0BA2581A4B400F503E2 /* Debug */ = {
+		D040F0FA25836A8200750D76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -219,7 +219,7 @@
 			};
 			name = Debug;
 		};
-		D08CE0BB2581A4B400F503E2 /* Release */ = {
+		D040F0FB25836A8200750D76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -274,44 +274,44 @@
 			};
 			name = Release;
 		};
-		D08CE0BD2581A4B400F503E2 /* Debug */ = {
+		D040F0FD25836A8200750D76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"WeatherMVVM/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FindMyIP/Preview Content\"";
 				DEVELOPMENT_TEAM = 2Z7YX43544;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = WeatherMVVM/Info.plist;
+				INFOPLIST_FILE = FindMyIP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Lee.WeatherMVVM;
+				PRODUCT_BUNDLE_IDENTIFIER = Lee.FindMyIP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D08CE0BE2581A4B400F503E2 /* Release */ = {
+		D040F0FE25836A8200750D76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"WeatherMVVM/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FindMyIP/Preview Content\"";
 				DEVELOPMENT_TEAM = 2Z7YX43544;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = WeatherMVVM/Info.plist;
+				INFOPLIST_FILE = FindMyIP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Lee.WeatherMVVM;
+				PRODUCT_BUNDLE_IDENTIFIER = Lee.FindMyIP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,25 +321,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D08CE0A82581A4AF00F503E2 /* Build configuration list for PBXProject "WeatherMVVM" */ = {
+		D040F0E825836A7E00750D76 /* Build configuration list for PBXProject "FindMyIP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D08CE0BA2581A4B400F503E2 /* Debug */,
-				D08CE0BB2581A4B400F503E2 /* Release */,
+				D040F0FA25836A8200750D76 /* Debug */,
+				D040F0FB25836A8200750D76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D08CE0BC2581A4B400F503E2 /* Build configuration list for PBXNativeTarget "WeatherMVVM" */ = {
+		D040F0FC25836A8200750D76 /* Build configuration list for PBXNativeTarget "FindMyIP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D08CE0BD2581A4B400F503E2 /* Debug */,
-				D08CE0BE2581A4B400F503E2 /* Release */,
+				D040F0FD25836A8200750D76 /* Debug */,
+				D040F0FE25836A8200750D76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D08CE0A52581A4AF00F503E2 /* Project object */;
+	rootObject = D040F0E525836A7D00750D76 /* Project object */;
 }
