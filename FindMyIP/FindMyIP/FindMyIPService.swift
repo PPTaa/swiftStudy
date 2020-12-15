@@ -19,6 +19,7 @@ public class FindMyIPService:NSObject{
     
     
     public func loadIPData(_ completionHandler: @escaping ((FindMyIP) -> Void) ) {
+        self.findMyIP()
         self.completionHandler = completionHandler
         print("completionHandler", completionHandler)
     }
@@ -39,6 +40,10 @@ public class FindMyIPService:NSObject{
                 self.completionHandler?(FindMyIP(response: response))
             }
         }.resume()
+    }
+    
+    public func refresh(){
+        self.findMyIP()
     }
 }
 

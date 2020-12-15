@@ -21,6 +21,15 @@ public class FindMyIPViewModel: ObservableObject {
             }
         }
     }
+    
+    public func refresh(){
+        print("refresh")
+        findMyIPService.loadIPData{data in
+            DispatchQueue.main.async {
+                self.ip = data.ip
+            }
+        }
+    }
 }
     
     
