@@ -1,7 +1,7 @@
 //
 //  FindIPService.swift
 //  FindMyIP
-//
+//  Service
 //  Created by 맥북에어 on 2020/12/11.
 //
 

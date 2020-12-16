@@ -1,7 +1,7 @@
 //
 //  FindMyIP.swift
 //  FindMyIP
-//
+//  Model
 //  Created by 맥북에어 on 2020/12/11.
 //
 

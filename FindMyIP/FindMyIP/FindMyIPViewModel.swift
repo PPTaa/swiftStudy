@@ -1,7 +1,7 @@
 //
 //  FindMyIPViewModel.swift
 //  FindMyIP
-//
+//  ViewModels
 //  Created by 맥북에어 on 2020/12/11.
 //
 
