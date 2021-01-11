@@ -65,3 +65,67 @@ evenNumbers1.suffix(3)
 
 // 원래는 그대로
 evenNumbers1
+
+
+// ----- Dictionary: key와 value 값으로 표현
+
+var scoreDict: [String: Int] = ["Tom":99, "Json":80, "Mary":77]
+var scoreDict1: Dictionary<String, Int> = ["Tom":99, "Json":80, "Mary":77]
+
+scoreDict["Tom"]
+scoreDict["jj"] // 없을 수도 있기 때문에 optional
+
+//scoreDict = [:]
+scoreDict.isEmpty // 비어있는지
+scoreDict.count // 갯수
+
+// 기존 key 업데이트
+scoreDict["Json"] = 100
+scoreDict
+
+// key, value 추가
+scoreDict["Jack"] = 74
+scoreDict
+
+// 삭제
+scoreDict["Jack"] = nil
+scoreDict
+
+//for loop
+// key, value 모두 가져오는 것
+for (name, score) in scoreDict {
+    print(name, score)
+}
+
+// key만 가져오는 것
+for key in scoreDict.keys {
+    print(key) // 순서는 없음
+}
+
+// 1. 이름, 직업, 도시에 대해서 본인의 딕셔너리 만들기
+var me:[String: String] = ["Name":"Lee", "Job":"Dev", "City":"Seoul"]
+// 2. 여기서 도시를 부산으로 업데이트 하기
+me["City"] = "Busan"
+// 3. 딕셔너리를 받아서 이름과 도시 프린트하는 함수 만들기
+func printDict(dic:Dictionary<String, String>) {
+    guard let name = dic["Name"] else { return print("nil") }
+    guard let city = dic["City"] else { return print("nil") }
+    print("name: \(name)")
+    print("city: \(city)")
+}
+
+printDict(dic: me)
+
+// ----- Set : 중복이 없는 유니크한 아이템을 관리 할때 , 순서가 없음
+
+var someSet: Set<Int> = [1,2,3,4,5,1,2,4,5,6]
+
+someSet.isEmpty
+someSet.count
+
+someSet.contains(4)
+someSet.contains(8)
+
+someSet.insert(10)
+someSet.remove(1)
+someSet
