@@ -63,3 +63,4 @@ func simpleFunc2(message:String, simpleClosure: ()->Void) {
 simpleFunc2(message: "메시지입니다.") {
     print("hello World")
 }
+// Closure
