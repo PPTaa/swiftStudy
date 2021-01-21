@@ -60,3 +60,24 @@ personClass1 = personClass2
 personClass1.firstName
 personClass2.firstName
 
+// struct 사용하는 경우
+// 1. 두 object를 같다 다르다로 비교해야하는 경우 ex)
+//let point1 = Point(x:3, y:5)
+//let point2 = Point(x:3, y:5)
+
+// 2. Copy된 각 객체들이 독립적인 상태를 가져야 하는 경우
+//var myMac = Mac(owner:"Tom")
+//var yourMac = myMac
+//yourMac.owner = "Kim"
+//myMac.owner
+//yourMac.owner
+
+// 3. 코드에서 오브젝트의 데이터를 여러 스레드에 걸쳐 사용할 경우
+
+
+// class 사용하는 경우
+// 1. 두 object의 인스턴스자체가 같음을 확인해야 하는 경우
+
+// 2. 하나의 객체가 필요하고, 여러대상에 의해 접근되고 변경이 필요한 경우
+
+// -----> 일단 Struct로 쓰고 Clas를 활용해야 하는 경우 변환시키자
