@@ -9,45 +9,45 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-//        MyWebView(urlToLoad: "https://daum.net")
+        MyWebView(urlToLoad: "http:smartsearch.smartmobilityinc.co.kr/handycab.html").edgesIgnoringSafeArea(.all)
         
-        NavigationView{
-            HStack{
-                NavigationLink(
-                    destination: MyWebView(urlToLoad: "https://www.naver.com")
-                        .edgesIgnoringSafeArea(.all)){
-                    Text("Naver")
-                        .font(.system(size: 20))
-                        .fontWeight(.bold)
-                        .padding(20)
-                        .background(Color.green)
-                        .foregroundColor(Color.white)
-                        .cornerRadius(10)
-                }
-                NavigationLink(
-                    destination: MyWebView(urlToLoad: "https://www.daum.net")
-                        .edgesIgnoringSafeArea(.all)){
-                    Text("Daum")
-                        .font(.system(size: 20))
-                        .fontWeight(.bold)
-                        .padding(20)
-                        .background(Color.yellow)
-                        .foregroundColor(Color.black)
-                        .cornerRadius(10)
-                }
-                NavigationLink(
-                    destination: MyWebView(urlToLoad: "https://www.google.com")
-                        .edgesIgnoringSafeArea(.all)){
-                    Text("Google")
-                        .font(.system(size: 20))
-                        .fontWeight(.bold)
-                        .padding(20)
-                        .background(Color.blue)
-                        .foregroundColor(Color.white)
-                        .cornerRadius(10)
-                }
-            }
-        }
+//        NavigationView{
+//            HStack{
+//                NavigationLink(
+//                    destination: MyWebView(urlToLoad: "http:smartsearch.smartmobilityinc.co.kr/handycab.html")
+//                        .edgesIgnoringSafeArea(.all)){
+//                    Text("Naver")
+//                        .font(.system(size: 20))
+//                        .fontWeight(.bold)
+//                        .padding(20)
+//                        .background(Color.green)
+//                        .foregroundColor(Color.white)
+//                        .cornerRadius(10)
+//                }
+//                NavigationLink(
+//                    destination: MyWebView(urlToLoad: "https://www.daum.net")
+//                        .edgesIgnoringSafeArea(.all)){
+//                    Text("Daum")
+//                        .font(.system(size: 20))
+//                        .fontWeight(.bold)
+//                        .padding(20)
+//                        .background(Color.yellow)
+//                        .foregroundColor(Color.black)
+//                        .cornerRadius(10)
+//                }
+//                NavigationLink(
+//                    destination: MyWebView(urlToLoad: "https://www.google.com")
+//                        .edgesIgnoringSafeArea(.all)){
+//                    Text("Google")
+//                        .font(.system(size: 20))
+//                        .fontWeight(.bold)
+//                        .padding(20)
+//                        .background(Color.blue)
+//                        .foregroundColor(Color.white)
+//                        .cornerRadius(10)
+//                }
+//            }
+//        }
     }
 }
 

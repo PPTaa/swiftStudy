@@ -58,3 +58,22 @@ Controller의 역할을 축소시키고, 각 역할간에 업무가 명확해지
 
 - 시간에 따라서 뷰의 상태가 바뀌는 것을 의미
 - 시작 , 끝, 시간 의 개념이 중요하게 작용함ㄴ
+
+
+
+## URLSession
+
+IOS에서 네트워킹을 할때는 URLSession을 통해서 하게됨
+
+URLSession을 만들기 위해서 URLSessionConfiguration, 
+
+URLSession을 작업시키기 위해서 URLSessionTask를 사용 
+
+- URLSessionConfiguration 
+
+> Default, Ephemeral, Background
+
+- URLSessionTask
+
+> DataTask, UploadTask, DownloadTask
+

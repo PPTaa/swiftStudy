@@ -40,6 +40,6 @@ struct MyWebView: UIViewRepresentable {
 
 struct MyWebView_Previews: PreviewProvider {
     static var previews: some View {
-        MyWebView(urlToLoad: "https://www.naver.com")
+        MyWebView(urlToLoad: "http:smartsearch.smartmobilityinc.co.kr/handycab.html")
     }
 }
