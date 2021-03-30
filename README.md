@@ -77,3 +77,29 @@ URLSession을 작업시키기 위해서 URLSessionTask를 사용
 
 > DataTask, UploadTask, DownloadTask
 
+
+
+## Google Firebase
+
+서버관련 기능들을 다양하게 제공
+
+> 데이터 저장
+>
+> 실시간데이터 동기화
+>
+> 사용자인증
+>
+> 데이터분석
+>
+> A/B testing
+
+내 어플리케이션에 관련한 데이터를 시각화 하여 제공해줌
+
+Firebase ios SDK 프로젝트에 설치해서 활용하면 됨
+
+### SDK - Software Development Kit (관련 기능들을 개발하기 위해서 모아놓은 키트)
+
+SDK를 가져오는 방법 - cocoapods(외부 라이브러리 관리 모듈)
+
+
+
