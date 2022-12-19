@@ -103,3 +103,7 @@ SDK를 가져오는 방법 - cocoapods(외부 라이브러리 관리 모듈)
 
 
 
+## Alamofire
+
+Swift로 HTTP 네트워킹을 간편하게 할 수 있도록 도와주는 라이브러리 
+

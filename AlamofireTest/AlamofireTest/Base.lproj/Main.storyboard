@@ -34,10 +34,10 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Onp-pf-9oe" customClass="CustomCell" customModule="AlamofireTest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="103"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="103.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Onp-pf-9oe" id="kTT-Nd-5DO">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="103"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="103.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="stationName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hq4-pT-0ks">
@@ -53,7 +53,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="stationX, Y" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuI-fW-1Dn">
-                                                    <rect key="frame" x="10" y="72" width="82.5" height="20.5"/>
+                                                    <rect key="frame" x="10" y="72" width="82.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -80,16 +80,44 @@
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="JAe-02-dRd"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilO-M9-4AR">
+                                <rect key="frame" x="278" y="64" width="90" height="30"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="tmapCallTest">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="tmapBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xUm-7L-9zN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3g-Pf-GqA">
+                                <rect key="frame" x="30" y="64" width="100" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ELS-yN-fYO"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="railportalBtnClick"/>
+                                <connections>
+                                    <action selector="railportalBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="idB-kG-IZh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7h0-ui-UKB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="5FK-vM-QkK"/>
+                            <constraint firstItem="ilO-M9-4AR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="9ya-9G-0Hq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1zw-of-LPw" secondAttribute="bottom" id="CtG-dA-J2C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ilO-M9-4AR" secondAttribute="trailing" constant="46" id="Umu-Ak-0ba"/>
                             <constraint firstItem="1zw-of-LPw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XJG-cP-aDj"/>
                             <constraint firstItem="1zw-of-LPw" firstAttribute="top" secondItem="7h0-ui-UKB" secondAttribute="bottom" constant="20" id="fNu-Re-Pax"/>
+                            <constraint firstItem="7h0-ui-UKB" firstAttribute="leading" secondItem="T3g-Pf-GqA" secondAttribute="trailing" constant="27" id="fVF-mP-95C"/>
+                            <constraint firstItem="ilO-M9-4AR" firstAttribute="leading" secondItem="7h0-ui-UKB" secondAttribute="trailing" constant="21" id="hP0-2L-nai"/>
+                            <constraint firstItem="T3g-Pf-GqA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lUe-5D-yx3"/>
                             <constraint firstItem="7h0-ui-UKB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pM3-n6-6Hm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1zw-of-LPw" secondAttribute="trailing" id="rCb-dT-SND"/>
+                            <constraint firstItem="T3g-Pf-GqA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="y1D-vo-7Kn"/>
                         </constraints>
                     </view>
                     <connections>
@@ -102,11 +130,20 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

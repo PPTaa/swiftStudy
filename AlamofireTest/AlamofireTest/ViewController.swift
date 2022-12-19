@@ -12,31 +12,55 @@ class ViewController: UIViewController {
     
     var data0: [[String]] = []
     
+    let semaphore = DispatchSemaphore(value: 0)
+    
+    var tmapPara:Parameters = [
+        "version" : "1",
+        "format" : "json",
+        "callback" : "result",
+        "appKey":"l7xx98d2ab7920cb4d80ae85d92e7772a4b5",
+        "startX" : "126.97871544",
+        "startY" : "37.56689860",
+        "endX" : "127.00160213",
+        "endY" : "37.57081522",
+        "startName" : "출발지",
+        "endName" : "도착지"
+    ]
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        tableView.reloadSections(IndexSet(0...0), with: UITableView.RowAnimation.automatic)
-        
         print("appear")
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        apiCall()
+//        apiCall()
         print("load")
     }
     @IBAction func btnClick(_ sender: Any) {
 //        cell.stationName.text = "aa"
-//        apiCall()
-        
-        tableView.reloadSections(IndexSet(0...0), with: UITableView.RowAnimation.automatic)
+        print("btn click 1")
+        apiCall()
+        print("btn click 2")
+//        self.tableView.reloadSections(IndexSet(0...0), with: UITableView.RowAnimation.automatic)
         print("count : \(data0.count)")
         print("data : \(data0)")
     }
+    @IBAction func tmapBtnClick(_ sender: Any) {
+        tmapApiCall()
+    }
     @IBOutlet weak var tableView: UITableView!
     
-    
+    func reloadTableView(){
+        tableView.reloadSections(IndexSet(0...0), with: UITableView.RowAnimation.automatic)
+    }
+    @IBAction func railportalBtnClick(_ sender: Any) {
+        railportalApiCall()
+    }
     
     func apiCall() {
+        print("apicall start")
         AF.request("http://openapi.seoul.go.kr:8088/sample/json/bikeList/1/5/").responseJSON { response in
             switch response.result {
             case .success(let data) :
@@ -45,11 +69,13 @@ class ViewController: UIViewController {
                     print("jsonData : \(jsonData)")
                     let getData = try JSONDecoder().decode(Root.self, from: jsonData)
                     print("data : \(getData.rentBikeStatus.row)")
-                    
                     for i in getData.rentBikeStatus.row {
                         print(i.stationName)
                         print(i.X, i.Y)
                         self.data0.append([i.stationName, i.parkingBikeTotCnt, i.stationLongitude, i.stationLatitude])
+                    }
+                    DispatchQueue.main.async {
+                        self.reloadTableView()
                     }
                 } catch let error {
                     print(error.localizedDescription)
@@ -59,6 +85,37 @@ class ViewController: UIViewController {
                 print("error: \(error)")
                 break
             }
+            print("apicall end")
+        }
+    }
+    
+    func tmapApiCall() {
+        print("tmapApiCall start")
+        AF.request("https://apis.openapi.sk.com/tmap/routes/pedestrian", parameters: tmapPara, encoding: URLEncoding.queryString).responseJSON { response in
+            switch response.result {
+            case .success(let data) :
+                print(data)
+                break
+            case .failure(let error):
+                print("error: \(error)")
+                break
+            }
+            print("tmapApiCall end")
+        }
+    }
+    
+    func railportalApiCall() {
+        print("railportalApiCall start")
+        AF.request("http://openapi.kric.go.kr/openapi/handicapped/stationMovement?serviceKey=$2a$10$ZDm3qlChvBbhPNxay20fHe6DxH/lr0m3AzoygqkMTrHUYU1nFgvtq&format=json&railOprIsttCd=S1&lnCd=3&stinCd=322&nextStinCd=323", parameters: tmapPara, encoding: URLEncoding.queryString).responseJSON { response in
+            switch response.result {
+            case .success(let data) :
+                print(data)
+                break
+            case .failure(let error):
+                print("error: \(error)")
+                break
+            }
+            print("railportalApiCall end")
         }
     }
 }
