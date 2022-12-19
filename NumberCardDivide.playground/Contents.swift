@@ -38,133 +38,46 @@ func solution(_ arrayA:[Int], _ arrayB:[Int]) -> Int {
     
     print(commonFactorA + commonFactorB)
     
-    // commonFactorA 와 commonFactorB를 연결한 후
+    // commonFactorA 와 commonFactorB를 연결한 후 중복을 제거하여 반복문 실행
     for factor in Set(commonFactorA + commonFactorB) {
+        // 판별 변수 초기화
         var bool = true
-        // A == O , B == X
+        // arrayA에서 공약수로 나눌수 있는 경우 && arrayB에서 공약수로 나눌수 없는 경우
         for i in 0..<arrayA.count {
-            print(arrayA[i], "%", factor , "||", arrayB[i], "%", factor)
-            if (arrayA[i] % factor == 0) || (arrayB[i] % factor != 0) {
-                bool = false
-                break
-            }
-        }
-        
-        if bool { result = max(result, factor) }
-        print(result)
-        
-        bool = true
-        for i in 0..<arrayB.count {
-            print(arrayA[i], "%", factor , "||", arrayB[i], "%", factor)
+            // arrayA에서 공약수로 나눌수 없는 경우
+            // arrayB에서 공약수로 나눌수 있는 경우
+            // 위 두가지 경우중 하나에 해당 되는 경우 -> false
+            // 모두 해당되지 않는 경우 -> true
             if (arrayA[i] % factor != 0) || (arrayB[i] % factor == 0) {
                 bool = false
                 break
             }
         }
-        
+        // true인 경우에만 result값 업데이트
         if bool { result = max(result, factor) }
-        print(result)
+        
+        
+        // 판별 변수 초기화
+        bool = true
+        // arrayA에서 공약수로 나눌수 없는 경우 && arrayB에서 공약수로 나눌수 있는 경우
+        for i in 0..<arrayB.count {
+            // arrayA에서 공약수로 나눌수 있는 경우
+            // arrayB에서 공약수로 나눌수 없는 경우
+            // 위 두가지 경우중 하나에 해당 되는 경우 -> false
+            // 모두 해당되지 않는 경우 -> true
+            if (arrayA[i] % factor == 0) || (arrayB[i] % factor != 0) {
+                bool = false
+                break
+            }
+        }
+        // true인 경우에만 result값 업데이트
+        if bool { result = max(result, factor) }
     }
-//
-//
-//    var result = 0
-//    if commonFactorA == [] {
-//        for int in commonFactorB {
-//            var count = 0
-//            for intA in arrayA {
-//                print( "\(intA) % \(int)",intA % int)
-//                if intA % int != 0 {
-//                    count += 1
-//                }
-//            }
-//            if count == commonFactorA.count {
-//                result = int
-//            }
-//        }
-//    } else {
-//        for int in commonFactorA {
-//            var count = 0
-//            for intB in arrayB {
-//                print( "\(intB) % \(int)",intB % int)
-//                if intB % int != 0 {
-//                    count += 1
-//                }
-//            }
-//            print(count)
-//            if count == arrayB.count {
-//                result = int
-//            }
-//        }
-//
-//    }
-//    return result
-    
-//
-//    let minA = arrayA[0]
-//
-//    for i in 2...minA {
-//        if minA % i == 0 {
-//            commonFactorA.append(i)
-//        }
-//    }
-//
-//    for i in commonFactorA {
-//        for j in arrayA {
-////            print(i, j)
-////            print("j%i = ",j%i)
-//            if j % i != 0 {
-//                commonFactorA.removeAll(where: { $0 == i })
-//            }
-//        }
-//    }
-//
-//    print("commonFactorA", commonFactorA)
-//
-//    var commonFactorB = [Int]()
-//    if commonFactorA != [] {
-//        // 첫번째 어레이의 공약수 중 두번째 어레이의 공약수가 되는지 판별
-//        for i in commonFactorA.reversed() {
-//            print(i)
-//            var cert = 0
-//            for j in arrayB {
-//                if j % i == 0 {
-//                    cert += 1
-//                }
-//            }
-//            if cert == 0 {
-//                commonFactorB.append(i)
-//                break
-//            }
-//        }
-////        print("commonFactorB", commonFactorB)
-//    } else {
-//        // 첫번째 어레이가 비었다면 두번째 어레이의 최대공약수 값이 정답
-//        arrayB.sorted { $0 > $1 }
-//        let minB = arrayB[0]
-//
-//        for i in 2...minB {
-//            if minB % i == 0 {
-//                commonFactorB.append(i)
-//            }
-//        }
-//
-//        for i in commonFactorB {
-//            for j in arrayB {
-//    //            print(i, j)
-//    //            print("j%i = ",j%i)
-//                if j % i != 0 {
-//                    commonFactorB.removeAll(where: { $0 == i })
-//                }
-//            }
-//        }
-//    }
-//
-//    print("commonFactorB", commonFactorB)
-//
     
     return result
 }
 
+//유클리디언 호제법을 이용한 최대공약수 찾기
 func gcd(_ a: Int, _ b: Int) -> Int {
     if b == 0 {
         return a
