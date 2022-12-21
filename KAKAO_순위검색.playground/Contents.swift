@@ -110,6 +110,8 @@ func solution2(_ info:[String], _ query:[String]) -> [Int] {
     for (idx, data) in queryList.enumerated() {
         if let scoreList = infoDict[data.0] {
             print(scoreList,"vs", data.1)
+            // 고차함수인 filter를 사용해서 풀려고 했으나 효율성 실패...
+//            result[idx] = scoreList.filter({$0 >= data.1}).count
             // 이진탐색 시작
             var start = 0
             var end = scoreList.count
