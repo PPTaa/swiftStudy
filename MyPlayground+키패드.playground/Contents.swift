@@ -9,6 +9,23 @@ func solution(_ strings:[String], _ n:Int) -> [String] {
     print(strings, n)
 //    var list = [Int: String]()
     let result = [String]()
+//
+//    for i in strings {
+//        var char = i[i.index(i.startIndex, offsetBy: n)]
+//        list[alpabet.firstIndex(of: String(char))!] = i
+//    }
+//
+//    for (k,v) in list.sorted(by: {$0.0 < $1.0}) {
+//        print("k:\(k), v:\(v)")
+//        result.append(v)
+//    }
+    
+//    let num = strings.count
+//    for i in 0..<num {
+//        strings[i].swapAt
+//    }
+//    let list = strings.sorted(by: {$0[$0.index($0.startIndex, offsetBy: n)] < $1[$1.index($1.startIndex, offsetBy: n)]})
+//    strings.sorted()
     let list = strings.sorted {
         if $0[$0.index($0.startIndex, offsetBy: n)] == $1[$1.index($1.startIndex, offsetBy: n)] {
             return $0 < $1
